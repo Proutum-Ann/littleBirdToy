@@ -1,6 +1,6 @@
 .hero-image {
     background: url(imgs/logos/Little\ Bird\ Toys\ Logo\ \(1\).png);
-    height: 50%;
+    height: 50%!important;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

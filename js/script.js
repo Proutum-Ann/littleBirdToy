@@ -1,14 +1,8 @@
-// let firstName = document.getElementById('firstName').value
-// let lastName = document.getElementById('lastName').value
-// let email = document.getElementById('email').value
-// let phone = document.getElementById('phone').value
-// let country = document.getElementById('country').value
-// let comments = document.getElementById('comments').value
-
-// function submitContact() {
-//     firstName.value = ''
-//     lastName.value = ''
-//     email.value = ''
-//     phone.value = ''
-//     comments.value = ''
-// }
+function submitContact() {
+document.getElementById('firstName').value = ' '
+document.getElementById('lastName').value = ' '
+document.getElementById('email').value = ' '
+document.getElementById('phone').value = ' '
+document.getElementById('country').value = ' '
+document.getElementById('comments').value = ' '
+}
