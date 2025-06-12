@@ -12,6 +12,40 @@ document.addEventListener('DOMContentLoaded', () => {
         const col = document.createElement('div')
 
         col.className = 'col-6 col-md-4 col-xl-3'
-        col.innerHTML = ``
+        col.innerHTML = `
+        <div class="card p-2 rounded-0">
+            <img src="..." class="card-img-top">
+            <div class="card-body">
+                <h5 class="card-title">${p.name}</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn" id="modalbtn" data-bs-toggle="modal" data-bs-target="#${p.alt}Modal">
+                    More information
+                </button>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                ...
+            </div>
+            </div>
+        </div>
+        </div>
+        `
      })
+})
+
+const myModal = document.getElementById('myModal')
+const myInput = document.getElementById('myInput')
+
+myModal.addEventListener('shown.bs.modal', () => {
+  myInput.focus()
 })
