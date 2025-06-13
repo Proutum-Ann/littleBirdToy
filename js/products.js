@@ -24,7 +24,8 @@ const products = [
                 review: ''
             },
         },
-        mainImg: 'imgs/plane1.jpg'
+        mainImg: 'imgs/plane1.jpg',
+        mainImg2: 'imgs/plane2.jpg',
     },
     {
         name: 'Wooden Train Set',

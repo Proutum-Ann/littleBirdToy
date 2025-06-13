@@ -1,8 +1,45 @@
 .hero-image {
-    background: url(imgs/logos/Little\ Bird\ Toys\ Logo\ \(1\).png);
-    height: 50%!important;
+    background: url(imgs/block4.jpg);
+    min-height: 50%!important;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+    margin-top: 0
+}
+
+footer {
+  margin-top: auto;
+  width: 100%;
+}
+
+main {
+    min-height: 78vh;    
+    display: flex;
+    flex-direction: column;
+}
+
+.topExNav {
+    margin-top: 2%
+}
+
+.btnHome a {
+    border-radius: 0;
+    background-color: #dfdfdf;
+    color: #503b3b;
+    width: 100%!important;
+    text-decoration: none;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    transition: .5s;
+    font-size: 150%
+}
+
+.btnHome a:hover {
+    color: #ff914d;
+    font-weight: bold;
+    letter-spacing: 3px;
+    border: solid 4px #ff914d
 }
