@@ -26,6 +26,11 @@ const products = [
         },
         mainImg: 'imgs/plane1.jpg',
         mainImg2: 'imgs/plane2.jpg',
+        opt1Img1: 'imgs/greenPlane1.jpg',
+        opt1Img2: 'imgs/greenPlane2.jpg',
+        opt2Img1: 'imgs/purplePlane1.jpg',
+        opt2Img2: 'imgs/purplePlane2.jpg',
+
     },
     {
         name: 'Wooden Train Set',

@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
             col.className = 'col-6 col-md-4 col-xl-3 my-3'
             col.innerHTML = `
             <div class="card p-2 rounded-0 productCard">
-                <img src="..." class="card-img-top">
+                <img src="${p.mainImg}" class="card-img-top">
                 <div class="card-body">
                     <h5 class="card-title">${p.name}</h5>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
@@ -64,10 +64,10 @@ document.addEventListener('DOMContentLoaded', () => {
                         </div>
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                            <img src="imgs/${p.options.option1}${p.alt}1.jpg" class="d-block w-100" alt="...">
+                            <img src="${p.opt1Img1}" class="d-block w-100" alt="...">
                             </div>
                             <div class="carousel-item">
-                            <img src="${p.color1Img2}" class="d-block w-100" alt="...">
+                            <img src="${p.opt1Img2}" class="d-block w-100" alt="...">
                             </div>
                         </div>
                         <button class="carousel-control-prev" type="button" data-bs-target="#opt1" data-bs-slide="prev">
@@ -87,10 +87,10 @@ document.addEventListener('DOMContentLoaded', () => {
                         </div>
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                            <img src="${p.color2Img1}" class="d-block w-100" alt="...">
+                            <img src="${p.opt2Img1}" class="d-block w-100" alt="...">
                             </div>
                             <div class="carousel-item">
-                            <img src="${p.color2Img2}" class="d-block w-100" alt="...">
+                            <img src="${p.opt2Img2}" class="d-block w-100" alt="...">
                             </div>
                         </div>
                         <button class="carousel-control-prev" type="button" data-bs-target="#opt2" data-bs-slide="prev">
