@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             <img src="${p.mainImg}" class="d-block w-100" alt="${p.alt}">
                             </div>
                             <div class="carousel-item">
-                            <img src="imgs/${p.alt}2.jpg" class="d-block w-100" alt="${p.alt}">
+                            <img src="${p.mainImg2}" class="d-block w-100" alt="${p.alt}">
                             </div>
                         </div>
                         <button class="carousel-control-prev" type="button" data-bs-target="#${p.alt}-default" data-bs-slide="prev">

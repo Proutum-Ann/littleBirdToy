@@ -120,12 +120,12 @@ const products = [
                 review: ''
             },
         },
-        mainImg: 'imgs/block1.jpg',
-        mainImg2: 'imgs/plane2.jpg',
-        opt1Img1: 'imgs/greenPlane1.jpg',
-        opt1Img2: 'imgs/greenPlane2.jpg',
-        opt2Img1: 'imgs/purplePlane1.jpg',
-        opt2Img2: 'imgs/purplePlane2.jpg',
+        mainImg: 'imgs/block2.jpg',
+        mainImg2: 'imgs/block1.jpg',
+        opt1Img1: 'imgs/block1purple.png',
+        opt1Img2: 'imgs/block2 purple.png',
+        opt2Img1: 'imgs/block1green.png',
+        opt2Img2: 'imgs/block2green.png',
     },
     {
         name: 'Wooden Car',
@@ -152,7 +152,12 @@ const products = [
                 review: ''
             },
         },
-        mainImg: 'imgs/car1.jpg'
+        mainImg: 'imgs/car1.jpg',
+        mainImg2: 'imgs/car4.jpg',
+        opt1Img1: 'imgs/car1blue.png',
+        opt1Img2: 'imgs/car4blue.png',
+        opt2Img1: 'imgs/car1pink.png',
+        opt2Img2: 'imgs/car4pink.png',
     },
     {
         name: 'Wooden Posable Robot',
@@ -179,6 +184,11 @@ const products = [
                 review: ''
             },
         },
-        mainImg: 'imgs/robot1.jpg'
+        mainImg: 'imgs/robot1.jpg',
+        mainImg2: 'imgs/robot2.jpg',
+        opt1Img1: 'imgs/robotBlack1.jpg',
+        opt1Img2: 'imgs/robotBlack2.jpg',
+        opt2Img1: 'imgs/robotGrey1.jpg',
+        opt2Img2: 'imgs/robotGrey2.jpg',
     },
 ]
