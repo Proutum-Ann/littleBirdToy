@@ -34,10 +34,10 @@ document.addEventListener('DOMContentLoaded', () => {
                     </div>
                     <div class="modal-body">
                     <div class="col-md-3">
-                        <div id="default" class="carousel slide">
+                        <div id="${p.alt}-default" class="carousel slide">
                         <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#default" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                            <button type="button" data-bs-target="#default" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#${p.alt}-default" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#${p.alt}-default" data-bs-slide-to="1" aria-label="Slide 2"></button>
                         </div>
                         <div class="carousel-inner">
                             <div class="carousel-item active">
@@ -47,20 +47,20 @@ document.addEventListener('DOMContentLoaded', () => {
                             <img src="imgs/${p.alt}2.jpg" class="d-block w-100" alt="${p.alt}">
                             </div>
                         </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#default" data-bs-slide="prev">
+                        <button class="carousel-control-prev" type="button" data-bs-target="#${p.alt}-default" data-bs-slide="prev">
                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                             <span class="visually-hidden">Previous</span>
                         </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#default" data-bs-slide="next">
+                        <button class="carousel-control-next" type="button" data-bs-target="#${p.alt}-default" data-bs-slide="next">
                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
                             <span class="visually-hidden">Next</span>
                         </button>
                         </div>
 
-                        <div id="opt1" class="carousel slide d-none">
+                        <div id="${p.alt}-opt1" class="carousel slide d-none">
                         <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#opt1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                            <button type="button" data-bs-target="#opt1" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#${p.alt}-opt1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#${p.alt}-opt1" data-bs-slide-to="1" aria-label="Slide 2"></button>
                         </div>
                         <div class="carousel-inner">
                             <div class="carousel-item active">
@@ -70,20 +70,20 @@ document.addEventListener('DOMContentLoaded', () => {
                             <img src="${p.opt1Img2}" class="d-block w-100" alt="...">
                             </div>
                         </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#opt1" data-bs-slide="prev">
+                        <button class="carousel-control-prev" type="button" data-bs-target="#${p.alt}-opt1" data-bs-slide="prev">
                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                             <span class="visually-hidden">Previous</span>
                         </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#opt1" data-bs-slide="next">
+                        <button class="carousel-control-next" type="button" data-bs-target="#${p.alt}-opt1" data-bs-slide="next">
                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
                             <span class="visually-hidden">Next</span>
                         </button>
                         </div>
 
-                        <div id="opt2" class="carousel slide d-none">
+                        <div id="${p.alt}-opt2" class="carousel slide d-none">
                         <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#opt2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                            <button type="button" data-bs-target="#opt2" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#${p.alt}-opt2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#${p.alt}-opt2" data-bs-slide-to="1" aria-label="Slide 2"></button>
                         </div>
                         <div class="carousel-inner">
                             <div class="carousel-item active">
@@ -93,19 +93,19 @@ document.addEventListener('DOMContentLoaded', () => {
                             <img src="${p.opt2Img2}" class="d-block w-100" alt="...">
                             </div>
                         </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#opt2" data-bs-slide="prev">
+                        <button class="carousel-control-prev" type="button" data-bs-target="#${p.alt}-opt2" data-bs-slide="prev">
                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                             <span class="visually-hidden">Previous</span>
                         </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#opt2" data-bs-slide="next">
+                        <button class="carousel-control-next" type="button" data-bs-target="#${p.alt}-opt2" data-bs-slide="next">
                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
                             <span class="visually-hidden">Next</span>
                         </button>
                         </div>
 
-                        <button class="btn btn-primary" onclick="openDefault()">Default</button>
-                        <button class="btn btn-primary" onclick="openOpt1()">Option 1</button>
-                        <button class="btn btn-primary" onclick="openOpt2()">Option 2</button>
+                        <button class="btn btn-primary" onclick="openDefault('${p.alt}')">Default</button>
+                        <button class="btn btn-primary" onclick="openOpt1('${p.alt}')">Option 1</button>
+                        <button class="btn btn-primary" onclick="openOpt2('${p.alt}')">Option 2</button>
                     </div>
                     
                     </div>
@@ -120,18 +120,18 @@ document.addEventListener('DOMContentLoaded', () => {
     
     render(products)
 })
-function openDefault() {
-    document.getElementById('default').classList.remove('d-none');
-    document.getElementById('opt1').classList.add('d-none');
-    document.getElementById('opt2').classList.add('d-none')
+function openDefault(id) {
+    document.getElementById(`${id}-default`).classList.remove('d-none');
+    document.getElementById(`${id}-opt1`).classList.add('d-none');
+    document.getElementById(`${id}-opt2`).classList.add('d-none')
 }
-function openOpt1() {
-    document.getElementById('opt1').classList.remove('d-none');
-    document.getElementById('default').classList.add('d-none');
-    document.getElementById('opt2').classList.add('d-none');
+function openOpt1(id) {
+    document.getElementById(`${id}-opt1`).classList.remove('d-none');
+    document.getElementById(`${id}-default`).classList.add('d-none');
+    document.getElementById(`${id}-opt2`).classList.add('d-none');
 }
-function openOpt2() {
-    document.getElementById('opt2').classList.remove('d-none');
-    document.getElementById('default').classList.add('d-none');
-    document.getElementById('opt1').classList.add('d-none');
+function openOpt2(id) {
+    document.getElementById(`${id}-opt2`).classList.remove('d-none');
+    document.getElementById(`${id}-default`).classList.add('d-none');
+    document.getElementById(`${id}-opt1`).classList.add('d-none');
 }

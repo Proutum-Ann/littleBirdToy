@@ -57,7 +57,12 @@ const products = [
                 review: ''
             },
         },
-        mainImg: 'imgs/train1.jpg'
+        mainImg: 'imgs/train1.jpg',
+        mainImg2: 'imgs/train3.jpg',
+        opt1Img1: 'imgs/train1blue.png',
+        opt1Img2: 'imgs/train2blue.png',
+        opt2Img1: 'imgs/train1pink.png',
+        opt2Img2: 'imgs/train2pink.png',
     },
     {
         name: 'Wooden Boat',
@@ -83,7 +88,12 @@ const products = [
                 review: ''
             },
         },
-        mainImg: 'imgs/boat1.jpg'
+        mainImg: 'imgs/boat1.jpg',
+        mainImg2: 'imgs/boat2.jpg',
+        opt1Img1: 'imgs/boat2orange.png',
+        opt1Img2: 'imgs/boat2orange.png',
+        opt2Img1: 'imgs/boat1blue.png',
+        opt2Img2: 'imgs/boat2blue.png',
     },
     {
         name: 'Wooden Block Set',
@@ -110,7 +120,12 @@ const products = [
                 review: ''
             },
         },
-        mainImg: 'imgs/block1.jpg'
+        mainImg: 'imgs/block1.jpg',
+        mainImg2: 'imgs/plane2.jpg',
+        opt1Img1: 'imgs/greenPlane1.jpg',
+        opt1Img2: 'imgs/greenPlane2.jpg',
+        opt2Img1: 'imgs/purplePlane1.jpg',
+        opt2Img2: 'imgs/purplePlane2.jpg',
     },
     {
         name: 'Wooden Car',
