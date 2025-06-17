@@ -81,15 +81,22 @@ main {
     background-color:#bc3315;
     color: white;
 }
-.socialMedia {
-    background-color: rgb(255, 183, 183);
-    padding: 5vh;
-    border-radius: 25px;
-    border: 2px white solid;
-}
-.contactInfo {
+
+.contactInfo, .socialMedia {
     background-color: rgb(255, 222, 150);
     padding: 5vh;
     border-radius: 25px;
     border: 2px white solid
+}
+
+/* Fonts */
+
+body {
+    font-family: "noto-mono", mono;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h1, h2, h3, h4, .display-1, .display-2, .display-3, .display-4 {
+    color: #ff914d!important
 }

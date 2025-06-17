@@ -16,7 +16,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 <img src="${p.mainImg}" class="card-img-top">
                 <div class="card-body">
                     <h5 class="card-title">${p.name}</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
                     <!-- Button trigger modal -->
                     <button type="button" class="btn" id="modalbtn" data-bs-toggle="modal" data-bs-target="#${p.alt}Modal">
                         More information
@@ -33,79 +32,95 @@ document.addEventListener('DOMContentLoaded', () => {
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                    <div class="col-md-3">
-                        <div id="${p.alt}-default" class="carousel slide">
-                        <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#${p.alt}-default" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                            <button type="button" data-bs-target="#${p.alt}-default" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                        </div>
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                            <img src="${p.mainImg}" class="d-block w-100" alt="${p.alt}">
+                    <div class="row mx-auto">
+                        <div class="col-md-3">
+                            <div id="${p.alt}-default" class="carousel slide">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#${p.alt}-default" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#${p.alt}-default" data-bs-slide-to="1" aria-label="Slide 2"></button>
                             </div>
-                            <div class="carousel-item">
-                            <img src="${p.mainImg2}" class="d-block w-100" alt="${p.alt}">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                <img src="${p.mainImg}" class="d-block w-100" alt="${p.alt}">
+                                </div>
+                                <div class="carousel-item">
+                                <img src="${p.mainImg2}" class="d-block w-100" alt="${p.alt}">
+                                </div>
                             </div>
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#${p.alt}-default" data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#${p.alt}-default" data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#${p.alt}-default" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#${p.alt}-default" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                            </div>
+
+                            <div id="${p.alt}-opt1" class="carousel slide d-none">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#${p.alt}-opt1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#${p.alt}-opt1" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                <img src="${p.opt1Img1}" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                <img src="${p.opt1Img2}" class="d-block w-100" alt="...">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#${p.alt}-opt1" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#${p.alt}-opt1" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                            </div>
+
+                            <div id="${p.alt}-opt2" class="carousel slide d-none">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#${p.alt}-opt2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#${p.alt}-opt2" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                <img src="${p.opt2Img1}" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                <img src="${p.opt2Img2}" class="d-block w-100" alt="...">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#${p.alt}-opt2" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#${p.alt}-opt2" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                            </div>
+
+                            <button class="btn btn-primary my-3" onclick="openDefault('${p.alt}')">Default</button>
+                            <button class="btn btn-primary my-3" onclick="openOpt1('${p.alt}')">Option 1</button>
+                            <button class="btn btn-primary my-3" onclick="openOpt2('${p.alt}')">Option 2</button>
                         </div>
 
-                        <div id="${p.alt}-opt1" class="carousel slide d-none">
-                        <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#${p.alt}-opt1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                            <button type="button" data-bs-target="#${p.alt}-opt1" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <!-- Info -->
+                        <div class="col-md-9 text-left">
+                            <p>${p.description}</p>
+                            <p>${p.dimensions.fullMeasurement()}</p>
                         </div>
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                            <img src="${p.opt1Img1}" class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                            <img src="${p.opt1Img2}" class="d-block w-100" alt="...">
-                            </div>
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#${p.alt}-opt1" data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#${p.alt}-opt1" data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>
-                        </div>
+                    </div>
 
-                        <div id="${p.alt}-opt2" class="carousel slide d-none">
-                        <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#${p.alt}-opt2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                            <button type="button" data-bs-target="#${p.alt}-opt2" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <div id="reviews">
+                        <div class="p-2">
+                            <h3><span class="d-flex float-left">${p.reviews.review1.username}<</span> <span class="d-flex float-right">${p.reviews.review1.rating}</span></h3>
+                            <hr class="w-100">
+                            <p>${p.reviews.review1.review}</p>
                         </div>
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                            <img src="${p.opt2Img1}" class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                            <img src="${p.opt2Img2}" class="d-block w-100" alt="...">
-                            </div>
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#${p.alt}-opt2" data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#${p.alt}-opt2" data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>
-                        </div>
-
-                        <button class="btn btn-primary" onclick="openDefault('${p.alt}')">Default</button>
-                        <button class="btn btn-primary" onclick="openOpt1('${p.alt}')">Option 1</button>
-                        <button class="btn btn-primary" onclick="openOpt2('${p.alt}')">Option 2</button>
                     </div>
                     
                     </div>

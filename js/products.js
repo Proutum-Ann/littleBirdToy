@@ -4,7 +4,7 @@ const products = [
         alt: 'plane',
         price: '',
         age: 'Toddlers',
-        description: 'Soar through imaginative skies with this classic wooden airplane. Handcrafted from sustainable Baltic birch wood with a safe, natural harvest finish and a spinning propeller. Measures 3.5"H x 7"L x 7"W.',
+        description: 'Soar through imaginative skies with this classic wooden airplane. Handcrafted from sustainable Baltic birch wood with a safe, natural harvest finish and a spinning propeller.',
         dimensions: {
             height: 3.5,
             width: 7,
@@ -25,7 +25,7 @@ const products = [
             },
         },
         mainImg: 'imgs/plane1.jpg',
-        mainImg2: 'imgs/plane2.jpg',
+        mainImg2: 'imgs/plane2default.jpg',
         opt1Img1: 'imgs/greenPlane1.jpg',
         opt1Img2: 'imgs/greenPlane2.jpg',
         opt2Img1: 'imgs/purplePlane1.jpg',
@@ -37,11 +37,11 @@ const products = [
         alt: 'train',
         price: '',
         age: '3+',
-        description: 'Embark on a charming journey with this beautiful handcrafted wooden train set. Engine and three interchangeable cars boast intricate details made from real beech wood. Large size (84cm L x 11cm H x 13cm W) with moving wheels and a fully ecological design.',
+        description: 'Embark on a charming journey with this beautiful handcrafted wooden train set. Engine and three interchangeable cars boast intricate details made from real beech wood. Large size with moving wheels and a fully ecological design.',
         dimensions: {
-            height: 2,
-            width: 12,
-            length: 13,
+            height: 11,
+            width: 13,
+            length: 84,
             fullMeasurement: function() {
                 return this.height + 'cm' + ' ' + 'x' + this.width + 'cm' + ' ' + 'x' + this.length + 'cm'
             }
@@ -69,7 +69,7 @@ const products = [
         alt: 'boat',
         price: '',
         age: 'All Ages',
-        description: 'Set sail for bathtub adventures with this adorable wooden boat. Made from solid Maine white pine, this handcrafted toy floats and features rounded edges for safety. Includes two peg "lobster people." Size: 10.5"W x 3.5"H.',
+        description: 'Set sail for bathtub adventures with this adorable wooden boat. Made from solid Maine white pine, this handcrafted toy floats and features rounded edges for safety. Includes two peg "lobster people."',
         dimensions: {
             height: 3.5,
             width: 10.5,
@@ -83,9 +83,14 @@ const products = [
         },
         reviews: {
             review1: {
-                username: '',
-                rating: '',
-                review: ''
+                username: 'imThebest',
+                rating: '⯪☆☆☆☆',
+                review: 'I WOULD GIVE THIS A 0, BUT I CAN ONLY GIVE A 0.5. WORST THING I\'VE EVER ORDERED! I COULDN\'T GET THE COLOR I WANT BECAUSE IT WAS OUT OF STOCK!!!!!'
+            },
+            review2: {
+                username: 'boat',
+                rating: '★★★★☆',
+                review: 'i like boat. only docked points because it had lobster people'
             },
         },
         mainImg: 'imgs/boat1.jpg',
@@ -100,7 +105,7 @@ const products = [
         alt: 'block',
         price: '',
         age: '3+',
-        description: 'Build creativity and imagination with this high-quality, 72-piece block set. Made from naturally finished and smooth-sanded hardwood blocks, this set comes in a convenient wooden storage crate (13” L x 12” W x 2” H)',
+        description: 'Build creativity and imagination with this high-quality, 72-piece block set. Made from naturally finished and smooth-sanded hardwood blocks, this set comes in a convenient wooden storage crate',
         dimensions: {
             height: 2,
             width: 12,
@@ -120,8 +125,8 @@ const products = [
                 review: ''
             },
         },
-        mainImg: 'imgs/block2.jpg',
-        mainImg2: 'imgs/block1.jpg',
+        mainImg: 'imgs/block1default.jpg',
+        mainImg2: 'imgs/block2default.jpg',
         opt1Img1: 'imgs/block1purple.png',
         opt1Img2: 'imgs/block2 purple.png',
         opt2Img1: 'imgs/block1green.png',
@@ -166,9 +171,9 @@ const products = [
         age: '3+',
         description: 'text blah blah blah',
         dimensions: {
-            height: '',
-            width: '',
-            length: '',
+            height: '12',
+            width: '3.5',
+            length: '4',
             fullMeasurement: function() {
                 return this.height + '"' + 'x' + this.width + '"' + 'x' + this.length + '"'
             }
@@ -179,9 +184,9 @@ const products = [
         },
         reviews: {
             review1: {
-                username: '',
-                rating: '',
-                review: ''
+                username: 'robot_L0vr',
+                rating: '★★★★★',
+                review: 'I love collecting robots and my sister gave this to me as a gift. I love how high the quality is and I use it as my stress toy. The price is right too. I recommend everyone to buy one.'
             },
         },
         mainImg: 'imgs/robot1.jpg',
@@ -192,3 +197,5 @@ const products = [
         opt2Img2: 'imgs/robotGrey2.jpg',
     },
 ]
+
+/* ★⯪☆ */
