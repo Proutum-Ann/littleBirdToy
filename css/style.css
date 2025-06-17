@@ -47,7 +47,7 @@ main {
     border: solid 4px #ff914d
 }
 .navbar {
-    background-color: burlywood;
+    background-color: rgb(222, 174, 135);
 }
 
 .navbar-brand, .nav-link {
