@@ -19,9 +19,19 @@ const products = [
         },
         reviews: {
             review1: {
-                username: '',
-                rating: '',
-                review: ''
+                username: 'John P.',
+                rating: '★★★★★',
+                review: 'As a parent who values both quality and sustainability, I was thrilled to find the Handcrafted Wooden Airplane Toy. Upon receiving it, I was immediately impressed by its craftsmanship. The smooth finish and sturdy construction made it clear that this was no ordinary toy.'
+            },
+            review2: {
+                username: 'Trella T.',
+                rating: '★★★★★',
+                review: 'My 3-year-old son was captivated from the moment he laid eyes on it. The movable propeller and spinning wheels added an interactive element that kept him engaged for hours. It\'s evident that this toy not only entertains but also fosters imaginative play and fine motor skills.'
+            },
+            review3: {
+                username: 'John P.',
+                rating: '★★★★★',
+                review: 'As a parent who values both quality and sustainability, I was thrilled to find the Handcrafted Wooden Airplane Toy. Upon receiving it, I was immediately impressed by its craftsmanship. The smooth finish and sturdy construction made it clear that this was no ordinary toy.'
             },
         },
         mainImg: 'imgs/plane1.jpg',
@@ -92,6 +102,11 @@ const products = [
                 rating: '★★★★☆',
                 review: 'i like boat. only docked points because it had lobster people'
             },
+            review2: {
+                username: 'Paul Hanson',
+                rating: '★★★★★',
+                review: 'Really well-made! My kids loved it and are always playing pirate with it!'
+            }
         },
         mainImg: 'imgs/boat1.jpg',
         mainImg2: 'imgs/boat2.jpg',

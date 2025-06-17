@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
             <div class="card p-2 rounded-0 productCard">
                 <img src="${p.mainImg}" class="card-img-top">
                 <div class="card-body">
-                    <h5 class="card-title">${p.name}</h5>
+                    <h5 class="card-title">${p.name} $${p.price}</h5>
                     <!-- Button trigger modal -->
                     <button type="button" class="btn" id="modalbtn" data-bs-toggle="modal" data-bs-target="#${p.alt}Modal">
                         More information
@@ -116,10 +116,23 @@ document.addEventListener('DOMContentLoaded', () => {
                     </div>
 
                     <div id="reviews">
+                    <!-- Reviews -->
                         <div class="p-2">
-                            <h3><span class="d-flex float-left">${p.reviews.review1.username}<</span> <span class="d-flex float-right">${p.reviews.review1.rating}</span></h3>
+                            <h3 class="justify-content-between"><span class="d-flex float-left">${p.reviews.review1.username}<</span> <span class="d-flex float-right">${p.reviews.review1.rating}</span></h3>
                             <hr class="w-100">
                             <p>${p.reviews.review1.review}</p>
+                        </div>
+
+                        <div class="p-2">
+                            <h3 class="justify-content-between"><span class="d-flex float-left">${p.reviews.review2.username}<</span> <span class="d-flex float-right">${p.reviews.review2.rating}</span></h3>
+                            <hr class="w-100">
+                            <p>${p.reviews.review2.review}</p>
+                        </div>
+
+                        <div class="p-2">
+                            <h3 class="justify-content-between"><span class="d-flex float-left">${p.reviews.review3.username}<</span> <span class="d-flex float-right">${p.reviews.review3.rating}</span></h3>
+                            <hr class="w-100">
+                            <p>${p.reviews.review3.review}</p>
                         </div>
                     </div>
                     
