@@ -9,7 +9,8 @@
 }
 body {
     background-color: bisque;
-
+    overflow-x: hidden;
+    color: #a0571f
 }
 footer {
   margin-top: auto;
@@ -26,10 +27,16 @@ main {
     margin-top: 2%
 }
 
+.nav-link {
+    color: #a0571f;
+    transition: 0.5s;
+    background-color: #dfdfdf;
+}
+
 .btnHome a {
     border-radius: 0;
     background-color: #dfdfdf;
-    color: #503b3b;
+    color: #a0571f;
     width: 100%!important;
     text-decoration: none;
     padding-left: 15%;
@@ -40,23 +47,31 @@ main {
     font-size: 150%
 }
 
-.btnHome a:hover {
+.btnHome a:hover, .nav-link:hover {
     color: #ff914d;
     font-weight: bold;
     letter-spacing: 3px;
     border: solid 4px #ff914d
 }
+
+.nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
 .navbar {
     background-color: rgb(222, 174, 135);
 }
 
 .navbar-brand, .nav-link {
-    background-color: rgba(255, 255, 255, 0.533);
     padding: 2vh;
     margin: 5px;
 }
 
-.form {
+.navbar-brand {
+    background-color:rgba(255, 255, 255, 0.5)
+}
+
+.form, .contactInfo, .socialMedia {
     background-color: #ff800029;
     padding: 5vh;
     border-radius: 25px;
@@ -82,13 +97,6 @@ main {
     color: white;
 }
 
-.contactInfo, .socialMedia {
-    background-color: rgb(255, 222, 150);
-    padding: 5vh;
-    border-radius: 25px;
-    border: 2px white solid
-}
-
 /* Fonts */
 
 body {
@@ -99,4 +107,13 @@ body {
 
 h1, h2, h3, h4, .display-1, .display-2, .display-3, .display-4 {
     color: #ff914d!important
+}
+
+.navbar-brand {
+    color: #503b3b!important
+}
+
+.prodRev {
+    font-family: "noto-mono", mono;
+    color: #503b3b!important
 }
