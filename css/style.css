@@ -15,6 +15,8 @@ body {
 footer {
   margin-top: auto;
   width: 100%;
+  margin-bottom: -10%;
+  color: rgb(0, 0, 0);
 }
 
 main {
@@ -31,6 +33,14 @@ main {
     color: #a0571f;
     transition: 0.5s;
     background-color: #dfdfdf;
+}
+
+.active {
+    background-color: rgba(255, 255, 255, 0.5);
+    color: #ff914d!important;
+    font-weight: bold;
+    letter-spacing: 3px;
+    border: solid 4px #ff914d
 }
 
 .btnHome a {
@@ -51,15 +61,16 @@ main {
     color: #ff914d;
     font-weight: bold;
     letter-spacing: 3px;
-    border: solid 4px #ff914d
+    border: solid 4px #ff914d;
+    background-color: rgba(255, 255, 255, 0.5);
 }
 
 .nav-link:hover {
     background-color: rgba(255, 255, 255, 0.5);
 }
 
-.navbar {
-    background-color: rgb(222, 174, 135);
+.navbar, footer {
+    background-color: #deae87;
 }
 
 .navbar-brand, .nav-link {
@@ -116,4 +127,9 @@ h1, h2, h3, h4, .display-1, .display-2, .display-3, .display-4 {
 .prodRev {
     font-family: "noto-mono", mono;
     color: #503b3b!important
+}
+
+h2 {
+    background-color: rgb(255, 244, 208);
+    padding: 5px;
 }

@@ -2,7 +2,7 @@ const products = [
     {
         name: 'Wooden Airplane',
         alt: 'plane',
-        price: '',
+        price: '15.55',
         age: 'Toddlers',
         description: 'Soar through imaginative skies with this classic wooden airplane. Handcrafted from sustainable Baltic birch wood with a safe, natural harvest finish and a spinning propeller.',
         dimensions: {
@@ -29,9 +29,9 @@ const products = [
                 review: 'My 3-year-old son was captivated from the moment he laid eyes on it. The movable propeller and spinning wheels added an interactive element that kept him engaged for hours. It\'s evident that this toy not only entertains but also fosters imaginative play and fine motor skills.'
             },
             review3: {
-                username: 'John P.',
-                rating: '★★★★★',
-                review: 'As a parent who values both quality and sustainability, I was thrilled to find the Handcrafted Wooden Airplane Toy. Upon receiving it, I was immediately impressed by its craftsmanship. The smooth finish and sturdy construction made it clear that this was no ordinary toy.'
+                username: 'icomplainalot',
+                rating: '★☆☆☆☆',
+                review: 'I don\'t like it, 1/5.'
             },
         },
         mainImg: 'imgs/plane1.jpg',
@@ -45,7 +45,7 @@ const products = [
     {
         name: 'Wooden Train Set',
         alt: 'train',
-        price: '',
+        price: '20.99',
         age: '3+',
         description: 'Embark on a charming journey with this beautiful handcrafted wooden train set. Engine and three interchangeable cars boast intricate details made from real beech wood. Large size with moving wheels and a fully ecological design.',
         dimensions: {
@@ -62,9 +62,19 @@ const products = [
         },
         reviews: {
             review1: {
-                username: '',
-                rating: '',
-                review: ''
+                username: 'Amanda',
+                rating: '★★⯪☆☆',
+                review: 'My son absolutely loves trains, and this most certainly gave him the time of his life! However, I would\'ve appreciated if this set came with tracks, since it\'s too large to fit on my son\'s other train tracks.'
+            },
+            review2: {
+                username: 'swear-word',
+                rating: '★★★⯪☆',
+                review: 'i like trains. jk, i don\'t, but it\'s enough to keep my cat entertained for a while.'
+            },
+            review3: {
+                username: 'Jane P.',
+                rating: '★★★★★',
+                review: 'I gave this to my nephew for his birthday and he loved it. It was his favorite  gift tat he got. I really lke the quality of this toy. I would buy it again for another kid who loves trains. '
             },
         },
         mainImg: 'imgs/train1.jpg',
@@ -77,7 +87,7 @@ const products = [
     {
         name: 'Wooden Boat',
         alt: 'boat',
-        price: '',
+        price: '9.68',
         age: 'All Ages',
         description: 'Set sail for bathtub adventures with this adorable wooden boat. Made from solid Maine white pine, this handcrafted toy floats and features rounded edges for safety. Includes two peg "lobster people."',
         dimensions: {
@@ -102,13 +112,13 @@ const products = [
                 rating: '★★★★☆',
                 review: 'i like boat. only docked points because it had lobster people'
             },
-            review2: {
+            review3: {
                 username: 'Paul Hanson',
                 rating: '★★★★★',
                 review: 'Really well-made! My kids loved it and are always playing pirate with it!'
             }
         },
-        mainImg: 'imgs/boat1.jpg',
+        mainImg: 'imgs/boat2.jpg',
         mainImg2: 'imgs/boat2.jpg',
         opt1Img1: 'imgs/boat2orange.png',
         opt1Img2: 'imgs/boat2orange.png',
@@ -118,7 +128,7 @@ const products = [
     {
         name: 'Wooden Block Set',
         alt: 'block',
-        price: '',
+        price: '15.50',
         age: '3+',
         description: 'Build creativity and imagination with this high-quality, 72-piece block set. Made from naturally finished and smooth-sanded hardwood blocks, this set comes in a convenient wooden storage crate',
         dimensions: {
@@ -135,9 +145,19 @@ const products = [
         },
         reviews: {
             review1: {
-                username: '',
-                rating: '',
-                review: ''
+                username: 'Jennifer Jalapenoes',
+                rating: '★★★★★',
+                review: 'Kept my child occupied for hours! She loves building structures with these, and she says she wants to be an architect someday!'
+            },
+            review2: {
+                username: 'BobtheBuilder',
+                rating: '⯪☆☆☆☆',
+                review: `WERE THESE BLOCKS SOLD ON WATER OR SOMETHING????? THERE WAS MOLD ON MY BLOCKS AND NOW I CAN'T BUILD ANYTHING WITH IT. WASTE OF MONEY`
+            },
+            review3: {
+                username: 'Custard Cookie III',
+                rating: '★★★★☆',
+                review: 'These blocks are perfect for building my own castle so it could look like Pure Vanilla\'s castle. However, I wish there were more colors than the two that were listed because it\'s very boring without other colors.'
             },
         },
         mainImg: 'imgs/block1default.jpg',
@@ -150,7 +170,7 @@ const products = [
     {
         name: 'Wooden Car',
         alt: 'car',
-        price: '',
+        price: '10.99',
         age: 'All Ages',
         description: 'This heirloom-quality wooden car is a timeless treasure. Handcrafted from domestic and exotic hardwoods with a clear lacquer finish, this unique car will inspire generations of imaginative play. Please note potential choking hazards for small children.',
         dimensions: {
@@ -167,9 +187,19 @@ const products = [
         },
         reviews: {
             review1: {
-                username: '',
-                rating: '',
-                review: ''
+                username: 'Kepling Kelp',
+                rating: '★★☆☆☆',
+                review: 'tsfyuagilfewhriuowe fwe fedsfid danss snio'
+            },
+            review2: {
+                username: 'montrellapatricia1000',
+                rating: '★★★★★',
+                review: 'This car was a lifesaver! I was looking for a gift for my cousin, but wasn\'t able to find any, but this car was just what I needed! He liked the gift a lot and frequently plays with it with his kids'
+            },
+            review3: {
+                username: 'mickey.wifey',
+                rating: '★★★★☆',
+                review: 'This car is perfect for my husband who loves collecting cars. However, I wish there were more colors because two options are not enough for him.'
             },
         },
         mainImg: 'imgs/car1.jpg',
@@ -182,9 +212,9 @@ const products = [
     {
         name: 'Wooden Posable Robot',
         alt: 'robot',
-        price: '',
+        price: '19.99',
         age: '3+',
-        description: 'text blah blah blah',
+        description: 'This heirloom-quality wooden robot is a timeless companion for curious minds. Handcrafted from durable hardwoods with elastic joints, this posable figure can twist, bend, sit, and strike playful poses. Designed to spark creativity and storytelling, it’s a charming keepsake for both play and display. Please note potential choking hazards for small children.',
         dimensions: {
             height: '12',
             width: '3.5',
@@ -202,6 +232,16 @@ const products = [
                 username: 'robot_L0vr',
                 rating: '★★★★★',
                 review: 'I love collecting robots and my sister gave this to me as a gift. I love how high the quality is and I use it as my stress toy. The price is right too. I recommend everyone to buy one.'
+            },
+            review2: {
+                username: 'Tung T.',
+                rating: '★★★★☆',
+                review: 'Junior absolutely loves this thing! He\'s practically drooling all over it (which I do find it concerning but I digress)! Really love the posability of the robot, but can be stiff when it\'s first opened'
+            },
+            review3: {
+                username: 'Falstaff',
+                rating: '★★★☆☆',
+                review: 'As a parent I really like how sturdy this product is! Although I would say to keep away from children who are still putting items in their mouths.'
             },
         },
         mainImg: 'imgs/robot1.jpg',

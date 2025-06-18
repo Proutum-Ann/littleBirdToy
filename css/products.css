@@ -1,5 +1,16 @@
 .productCard {
-    box-shadow: 2px 2px 10px
+    box-shadow: 2px 2px 10px #854629;
+	background: #dfdfdf;
+	border: solid 4px #ff914d;
+}
+
+.modal-content {
+	background: #dfdfdf;
+}
+
+.modal-header h1 {
+	font-size: 200%!important;
+	font-weight: bold
 }
 
 .btn {

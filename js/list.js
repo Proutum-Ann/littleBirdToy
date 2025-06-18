@@ -10,12 +10,12 @@ document.addEventListener('DOMContentLoaded', () => {
         list.forEach(p => {
             const col = document.createElement('div')
 
-            col.className = 'col-6 col-md-4 col-xl-3 my-3'
+            col.className = 'col-6 col-md-4 col-xl-3 my-3 d-flex align-item-center'
             col.innerHTML = `
-            <div class="card p-2 rounded-0 productCard">
+            <div class="card p-2 rounded-0 productCard h-100">
                 <img src="${p.mainImg}" class="card-img-top">
                 <div class="card-body">
-                    <h5 class="card-title">${p.name} $${p.price}</h5>
+                    <h5 class="card-title">${p.name}<br>$${p.price}</h5>
                     <!-- Button trigger modal -->
                     <button type="button" class="btn" id="modalbtn" data-bs-toggle="modal" data-bs-target="#${p.alt}Modal">
                         More information
@@ -32,12 +32,12 @@ document.addEventListener('DOMContentLoaded', () => {
                 <div class="modal-dialog modal-fullscreen">
                     <div class="modal-content card p-2 rounded-0">
                     <div class="modal-header">
-                        <h1 class="modal-title fs-5" id="exampleModalLabel">${p.name}</h1>
+                        <h1 class="modal-title fs-5 prodRev" id="exampleModalLabel">${p.name}</h1>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
                     <div class="row mx-auto">
-                        <div class="col-md-3">
+                        <div class="col-md-4">
                             <div id="${p.alt}-default" class="carousel slide">
                             <div class="carousel-indicators">
                                 <button type="button" data-bs-target="#${p.alt}-default" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -113,30 +113,36 @@ document.addEventListener('DOMContentLoaded', () => {
                         </div>
 
                         <!-- Info -->
-                        <div class="col-md-9 text-left">
+                        <div class="col-md-8" style="text-align: left">
+                            <h2 class="prodRev">About</h2>
                             <p>${p.description}</p>
-                            <p>${p.dimensions.fullMeasurement()}</p>
+
+                            <p><b>Measurements:</b> ${p.dimensions.fullMeasurement()}</p>
+                            <p><b>Price:</b> $${p.price}</p>
+                            <p><b>Age:</b>${p.age}</p>
+
+                            <a class="btn btn-primary w-100" target="_blank" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Buy Now!</a>
                         </div>
                     </div>
 
                     <div id="reviews">
                     <!-- Reviews -->
-                        <div class="p-2">
-                            <h3 class="justify-content-between prodRev"><span>${p.reviews.review1.username}</span> <span>${p.reviews.review1.rating}</span></h3>
+                        <div class="p-2" style="text-align: left">
+                            <h3><span class="prodRev">${p.reviews.review1.username}</span> ${p.reviews.review1.rating}</h3>
                             <hr class="w-100">
                             <p style="text-align: left">${p.reviews.review1.review}</p>
                         </div>
 
-                        <div class="p-2">
-                            <h3 class="justify-content-between prodRev"><span>${p.reviews.review2.username}</span> <span>${p.reviews.review2.rating}</span></h3>
+                        <div class="p-2" style="text-align: left">
+                            <h3><span class="prodRev">${p.reviews.review2.username}</span> ${p.reviews.review2.rating}</h3>
                             <hr class="w-100">
-                            <p>${p.reviews.review2.review}</p>
+                            <p style="text-align: left">${p.reviews.review2.review}</p>
                         </div>
 
-                        <div class="p-2">
-                            <h3 class="justify-content-between prodRev"><span>${p.reviews.review3.username}</span> <span>${p.reviews.review3.rating}</span></h3>
+                        <div class="p-2" style="text-align: left">
+                            <h3><span class="prodRev">${p.reviews.review3.username}</span> ${p.reviews.review3.rating}</h3>
                             <hr class="w-100">
-                            <p>${p.reviews.review3.review}</p>
+                            <p style="text-align: left">${p.reviews.review3.review}</p>
                         </div>
                     </div>
                     
