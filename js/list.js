@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     <h5 class="card-title">${p.name}<br>$${p.price}</h5>
                     <!-- Button trigger modal -->
                     <button type="button" class="btn" id="modalbtn" data-bs-toggle="modal" data-bs-target="#${p.alt}Modal">
-                        More information
+                        Purchase
                     </button>
                 </div>
             </div>
