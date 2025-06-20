@@ -133,3 +133,6 @@ h2 {
     background-color: rgb(255, 244, 208);
     padding: 5px;
 }
+label {
+    padding: 2vh;
+}

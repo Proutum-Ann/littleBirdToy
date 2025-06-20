@@ -107,9 +107,9 @@ document.addEventListener('DOMContentLoaded', () => {
                             </button>
                             </div>
 
-                            <button class="btn btn-primary my-3" onclick="openDefault('${p.alt}')">Default</button>
-                            <button class="btn btn-primary my-3" onclick="openOpt1('${p.alt}')">Option 1</button>
-                            <button class="btn btn-primary my-3" onclick="openOpt2('${p.alt}')">Option 2</button>
+                            <button class="btn my-3" onclick="openDefault('${p.alt}')">Default</button>
+                            <button class="btn my-3" onclick="openOpt1('${p.alt}')" style="background-color: ${p.color}; border: 1px solid ${p.border};">${p.options.option1}</button>
+                            <button class="btn my-3" onclick="openOpt2('${p.alt}')" style="background-color: ${p.color2}; border: 1px solid ${p.border2};">${p.options.option2}</button>
                         </div>
 
                         <!-- Info -->
@@ -121,7 +121,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             <p><b>Price:</b> $${p.price}</p>
                             <p><b>Age:</b>${p.age}</p>
 
-                            <a class="btn btn-primary w-100" target="_blank" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Buy Now!</a>
+                            <a class="btn w-100" target="_blank" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Buy Now!</a>
                         </div>
                     </div>
 

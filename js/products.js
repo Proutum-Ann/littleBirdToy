@@ -14,8 +14,8 @@ const products = [
             }
         },
         options: {
-            option1: 'green',
-            option2: 'green'
+            option1: 'Green',
+            option2: 'Purple'
         },
         reviews: {
             review1: {
@@ -40,7 +40,11 @@ const products = [
         opt1Img2: 'imgs/greenPlane2.jpg',
         opt2Img1: 'imgs/purplePlane1.jpg',
         opt2Img2: 'imgs/purplePlane2.jpg',
-
+        // button decor
+        color: '#879947',
+        border: 'green',
+        color2: '#5b3d4b',
+        border2: '#26151D',
     },
     {
         name: 'Wooden Train Set',
@@ -57,8 +61,8 @@ const products = [
             }
         },
         options: {
-            option1: 'blue',
-            option2: 'pink'
+            option1: 'Blue',
+            option2: 'Pink'
         },
         reviews: {
             review1: {
@@ -83,6 +87,11 @@ const products = [
         opt1Img2: 'imgs/train2blue.png',
         opt2Img1: 'imgs/train1pink.png',
         opt2Img2: 'imgs/train2pink.png',
+        // button decor
+        color: '#2AB2CA',
+        border: '#01849a',
+        color2: '#df66b3',
+        border2: '#b9239f',
     },
     {
         name: 'Wooden Boat',
@@ -98,8 +107,8 @@ const products = [
             }
         },
         options: {
-            option1: 'blue',
-            option2: 'orange'
+            option1: 'Orange',
+            option2: 'Blue'
         },
         reviews: {
             review1: {
@@ -124,6 +133,11 @@ const products = [
         opt1Img2: 'imgs/boat2orange.png',
         opt2Img1: 'imgs/boat1blue.png',
         opt2Img2: 'imgs/boat2blue.png',
+        // button decor
+        color: '#d68e5f',
+        border: '#c9542e',
+        color2: '#72b6c8',
+        border2: '#0294a1',
     },
     {
         name: 'Wooden Block Set',
@@ -140,8 +154,8 @@ const products = [
             }
         },
         options: {
-            option1: 'purple',
-            option2: 'green'
+            option1: 'Purple',
+            option2: 'Green'
         },
         reviews: {
             review1: {
@@ -166,6 +180,11 @@ const products = [
         opt1Img2: 'imgs/block2 purple.png',
         opt2Img1: 'imgs/block1green.png',
         opt2Img2: 'imgs/block2green.png',
+        // button decor
+        color: '#948ed7',
+        border: '#2b1b4f',
+        color2: '#8fa79c',
+        border2: '#50584b',
     },
     {
         name: 'Wooden Car',
@@ -182,8 +201,8 @@ const products = [
             }
         },
         options: {
-            option1: 'blue',
-            option2: 'pink'
+            option1: 'Blue',
+            option2: 'Pink'
         },
         reviews: {
             review1: {
@@ -208,6 +227,11 @@ const products = [
         opt1Img2: 'imgs/car4blue.png',
         opt2Img1: 'imgs/car1pink.png',
         opt2Img2: 'imgs/car4pink.png',
+        // button decor
+        color: '#738bf8',
+        border: '#101a48',
+        color2: '#e361c8',
+        border2: '#4a073c',
     },
     {
         name: 'Wooden Posable Robot',
@@ -224,8 +248,8 @@ const products = [
             }
         },
         options: {
-            option1: 'black',
-            option2: 'gray'
+            option1: 'Black',
+            option2: 'Gray'
         },
         reviews: {
             review1: {
@@ -250,6 +274,11 @@ const products = [
         opt1Img2: 'imgs/robotBlack2.jpg',
         opt2Img1: 'imgs/robotGrey1.jpg',
         opt2Img2: 'imgs/robotGrey2.jpg',
+        // button decor
+        color: '#484848',
+        border1: 'black',
+        color2: '#848484',
+        border2: 'black',
     },
 ]
 

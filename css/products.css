@@ -29,6 +29,7 @@
 	text-shadow:0px 1px 0px #854629;
 }
 .btn:hover {
-    background-color:#bc3315;
+    background-color:#bc3415be;
+	border:1px solid #942911;
     color: white;
 }
