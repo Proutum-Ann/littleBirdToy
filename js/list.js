@@ -68,10 +68,10 @@ document.addEventListener('DOMContentLoaded', () => {
                             </div>
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
-                                <img src="${p.opt1Img1}" class="d-block w-100" alt="...">
+                                <img src="${p.opt1Img1}" class="d-block w-100" alt="${p.color}${p.alt}">
                                 </div>
                                 <div class="carousel-item">
-                                <img src="${p.opt1Img2}" class="d-block w-100" alt="...">
+                                <img src="${p.opt1Img2}" class="d-block w-100" alt="${p.color}${p.alt}">
                                 </div>
                             </div>
                             <button class="carousel-control-prev" type="button" data-bs-target="#${p.alt}-opt1" data-bs-slide="prev">
@@ -91,10 +91,10 @@ document.addEventListener('DOMContentLoaded', () => {
                             </div>
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
-                                <img src="${p.opt2Img1}" class="d-block w-100" alt="...">
+                                <img src="${p.opt2Img1}" class="d-block w-100" alt="${p.color2}${p.alt}">
                                 </div>
                                 <div class="carousel-item">
-                                <img src="${p.opt2Img2}" class="d-block w-100" alt="...">
+                                <img src="${p.opt2Img2}" class="d-block w-100" alt="${p.color2}${p.alt}">
                                 </div>
                             </div>
                             <button class="carousel-control-prev" type="button" data-bs-target="#${p.alt}-opt2" data-bs-slide="prev">
